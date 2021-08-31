@@ -18,8 +18,8 @@ const CustomSidebarMenu = (props) => {
     <View style={stylesSidebar.sideMenuContainer}>
       <View style={stylesSidebar.profileHeader}>
         <View style={stylesSidebar.profileHeaderPicCircle}>
-          <Text style={{fontSize: 25, color: '#307ecc'}}>
-            {'About React'.charAt(0)}
+          <Text style={{fontSize: 25, color: '#000080'}}>
+            {'Hello'.charAt(0)}
           </Text>
         </View>
         <Text style={stylesSidebar.profileHeaderText}>
@@ -40,7 +40,7 @@ const CustomSidebarMenu = (props) => {
             props.navigation.toggleDrawer();
             Alert.alert(
               'Logout',
-              'Are you sure? You want to logout?',
+              'Are you sure? You want to logou?',
               [
                 {
                   text: 'Cancel',
@@ -71,13 +71,13 @@ const stylesSidebar = StyleSheet.create({
   sideMenuContainer: {
     width: '100%',
     height: '100%',
-    backgroundColor: '#307ecc',
+    backgroundColor: '#000080',
     paddingTop: 40,
     color: 'white',
   },
   profileHeader: {
     flexDirection: 'row',
-    backgroundColor: '#307ecc',
+    backgroundColor: '#000080',
     padding: 15,
     textAlign: 'center',
   },

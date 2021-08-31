@@ -11,16 +11,25 @@ const NavigationDrawerHeader = (props) => {
   };
 
   return (
-    <View style={{flexDirection: 'row'}}>
+   <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+   <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
       <TouchableOpacity onPress={toggleDrawer}>
         <Image
           source={{
             uri:
               'https://raw.githubusercontent.com/AboutReact/sampleresource/master/drawerWhite.png',
           }}
-          style={{width: 25, height: 25, marginLeft: 5}}
+          style={{width: 40, height: 40, marginLeft: 5}}
         />
-      </TouchableOpacity>
+        </TouchableOpacity>
+        
+       </View>
+        <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
+        <Image
+          source={require('../DrawerScreens/Img/mahapolicelogo.jpg') }
+          style={{width: 40, height: 40, marginLeft: 80}}
+      />
+</View>
     </View>
   );
 };
